@@ -18,3 +18,4 @@ asgiref==3.4.1
 pip==23.1.2
 ez-setup==0.9
 supertools==1.0.1
+setuptools==67.8.0
