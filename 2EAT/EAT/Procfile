@@ -1,2 +1,2 @@
-web:gunicorn EAT.wsgi --log-file
+web: gunicorn EAT.wsgi --log-file -
 
