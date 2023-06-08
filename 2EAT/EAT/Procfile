@@ -1,2 +1,3 @@
 web: gunicorn EAT.wsgi --log-file -
+gunicorn main:app
 
