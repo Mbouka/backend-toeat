@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-+k(=@q-)(8@_#oq_2g0g$ght2e58(4o0n5=y_#o4m*-n+(=#w8
 DEBUG = False
 port = os.environ.get('PORT', 8000)
 ALLOWED_HOSTS = ['backend-toeat-production.up.railway.app']
-ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['*']
 
 
 # Application definition
