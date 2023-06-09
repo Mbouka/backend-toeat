@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-+k(=@q-)(8@_#oq_2g0g$ght2e58(4o0n5=y_#o4m*-n+(=#w8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 port = os.environ.get('PORT', 8000)
-if 'runserver' in sys.argv:
- sys.argv.append(f'0.0.0.0:{port}')
+#if 'runserver' in sys.argv:
+# sys.argv.append(f'0.0.0.0:{port}')
 ALLOWED_HOSTS = ['backend-toeat-production.up.railway.app','0.0.0.0']
 
 
