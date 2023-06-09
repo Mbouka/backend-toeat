@@ -10,8 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
+import sys
 from pathlib import Path
-
+if 'runserver' in sys.argv:
+ sys.argv.append(f'0.0.0.0:{port}')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+k(=@q-)(8@_#oq_2g0g$ght2e58(4o0n5=y_#o4m*-n+(=#w8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
+DEBUG = False
+port = os.environ.get('PORT', 8000)
+ALLOWED_HOSTS = ['backend-toeat-production.up.railway.app','0.0.0.0']
 
 
 # Application definition
