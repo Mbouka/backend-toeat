@@ -11,8 +11,6 @@ iniconfig==2.0.0
 mysqlclient==2.1.1
 outcome==1.2.0
 packaging==23.1
-pluggy==1.0.0
-py==1.11.0
 pycparser==2.21
 sortedcontainers==2.4.0
 sqlparse==0.4.2
