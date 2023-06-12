@@ -81,7 +81,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'EAT.urls'
 
 #CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOWED_ORIGINS = ["https://backend-toeat-production.up.railway.app/"]
+CORS_ALLOWED_ORIGINS = ["https://backend-toeat-production.up.railway.app/", "http://localhost:8100/"]
 #CORS_ORIGIN_WHITELIST = (
  #   'https://backend-toeat-production.up.railway.app/',
   #  'http://localhost:8100',
