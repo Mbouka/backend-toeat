@@ -34,7 +34,7 @@ path('verify/<int:userid>/<int:placeid>', VerifyIfUserHadNotePlace.as_view()),
 path('searchplacesbycategory/<int:id>', GetPlacesByCategoryId.as_view()),
 
 path('searchdishesbyplace/<int:id>', GetDishesByPlaceId.as_view()),
-path ('searchconstibydish/<int:id>', GetPlacesByCategoryId.as_view()),
+path ('searchconstibydish/<int:id>', GetConstituentByDishId.as_view()),
 
 path('addorder', AddOrder),
 path('listorderbyuser/user<int:user_id>', ListOrderByUser),
