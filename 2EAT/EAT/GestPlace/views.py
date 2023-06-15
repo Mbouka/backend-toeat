@@ -907,5 +907,13 @@ def noteplacebyid(request, id):
         return Response(content, status=status.HTTP_404_NOT_FOUND)
 
 
+@api_view(['GET'])
+def ListCommentByIdPlace(request,id):
+    comments = Comments.objects.filter(place__id=id)
+    print('comments',comments)
+    # content = {"response": comments}
+    serializer = CommentProblemList(comments, many=True)
+    return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
+
 
 
